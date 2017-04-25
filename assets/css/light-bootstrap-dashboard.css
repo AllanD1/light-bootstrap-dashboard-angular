@@ -3580,9 +3580,6 @@ input:focus {
     -webkit-overflow-scrolling: touch;
   }
 }
-.modal.modal-angular .modal-dialog {
-  width: 570px;
-}
 .modal.modal-angular .modal-header {
   border-bottom: none;
   position: relative;
@@ -3594,14 +3591,14 @@ input:focus {
   border-bottom: 1px solid rgba(220, 220, 220, 0.2);
   width: 100%;
   display: block;
-  margin: 12px 0;
+  margin: 11px 0;
 }
 .modal.modal-angular .modal-body .image-container {
   width: 28px;
   height: 28px;
   overflow: hidden;
   margin: 0px auto;
-  margin-bottom: 6px;
+  margin-bottom: 17px;
 }
 .modal.modal-angular .modal-body .image-container img {
   width: 100%;
@@ -3622,16 +3619,6 @@ input:focus {
 .modal.modal-angular .modal-body h4 i {
   color: #c5a47e;
 }
-.modal.modal-angular .modal-body .free-version-card a.modal-button {
-  height: 170px;
-  max-height: 170px;
-}
-.modal.modal-angular .modal-body .free-version-card .image-container {
-  margin-bottom: 17px;
-}
-.modal.modal-angular .modal-body .free-version-card .separator {
-  margin: 20px 0;
-}
 .modal.modal-angular .modal-body a.modal-button {
   display: inline-block;
   padding: 15px;
@@ -3644,8 +3631,9 @@ input:focus {
   transition: box-shadow 150ms ease-in;
   width: 130px;
   max-width: 130px;
-  height: 209px;
-  max-height: 209px;
+  margin-bottom: 10px;
+  height: 170px;
+  max-height: 170px;
   font-weight: 100;
   border: 1px solid rgba(220, 220, 220, 0.4);
 }
@@ -3685,4 +3673,10 @@ input:focus {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+  .modal.modal-angular .modal-dialog {
+    width: 570px;
+  }
 }
